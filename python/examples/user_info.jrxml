@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="user_info" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a2316f5c-30b2-42b5-89ad-808e3426f68b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="JSON User Info"/>
+	<queryString language="json">
+		<![CDATA[data]]>
+	</queryString>
+	<field name="user_id" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="user_id"/>
+		<fieldDescription><![CDATA[user_id]]></fieldDescription>
+	</field>
+	<field name="first_name" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="first_name"/>
+		<fieldDescription><![CDATA[first_name]]></fieldDescription>
+	</field>
+	<field name="last_name" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="last_name"/>
+		<fieldDescription><![CDATA[last_name]]></fieldDescription>
+	</field>
+	<field name="employee_no" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="employee_no"/>
+		<fieldDescription><![CDATA[employee_no]]></fieldDescription>
+	</field>
+	<field name="facility_cd" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="facility_cd"/>
+		<fieldDescription><![CDATA[facility_cd]]></fieldDescription>
+	</field>
+	<field name="picture_base64" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="picture_base64"/>
+		<fieldDescription><![CDATA[picture_base64]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="82" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="20" width="267" height="43" forecolor="#FFFFFF" uuid="7fbd9c33-4564-40f8-904a-e9c5ea32f68f"/>
+				<textElement>
+					<font size="34" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Innotech Clinic]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="20" width="255" height="30" forecolor="#FFFFFF" uuid="8526de8d-0c10-48d1-a3df-0ba309eeff15"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[อินโนเทค Innotech]]></text>
+			</staticText>
+			<image>
+				<reportElement x="310" y="13" width="80" height="67" uuid="de448dbe-e310-401f-b488-dd5ce6f19530"/>
+				<imageExpression><![CDATA["C:/Users/kritsada/Dropbox/Tran-01.png"]]></imageExpression>
+			</image>
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-10" width="595" height="92" backcolor="#004D99" uuid="567a6e00-ee14-4a5e-bfbc-3af7d5e4e784"/>
+				<staticText>
+					<reportElement x="100" y="7" width="267" height="43" forecolor="#FFFFFF" uuid="b2bb5b00-e04c-4d06-92eb-47b73ff2c58c"/>
+					<textElement>
+						<font size="16" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Innotech Clinic]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="-15" y="50" width="255" height="30" forecolor="#FFFFFF" uuid="4947a938-4849-480d-9695-0adb41403363"/>
+					<textElement textAlignment="Right">
+						<font size="16" isBold="true"/>
+					</textElement>
+					<text><![CDATA[อินโนเทค Innotech]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="6" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="5" splitType="Stretch">
+			<staticText>
+				<reportElement x="402" y="0" width="100" height="5" uuid="f9ab44a0-330d-4989-8227-43b42701ea87">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="76f4dbea-3ec1-4028-af30-bdf08ad80467"/>
+				</reportElement>
+				<text><![CDATA[facility_cd]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="269" y="0" width="100" height="5" uuid="e52bb186-40e3-4f83-aee3-ac8d1ef4e963">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="324a1ffc-9188-4850-8cac-40bb29be98fb"/>
+				</reportElement>
+				<text><![CDATA[employee_no]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="144" splitType="Stretch">
+			<textField>
+				<reportElement x="120" y="23" width="100" height="30" uuid="90ae5db9-dc82-41f6-a181-ba9be1a5dca7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="850dd9b2-40f1-4084-af7b-85a708c6c5da"/>
+				</reportElement>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{user_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="63" width="100" height="30" uuid="10c337c2-70fd-490e-a9e4-a0689543d9a4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="89865e58-4dde-4555-a05f-5acbd2786594"/>
+				</reportElement>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{first_name}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="6" width="110" height="130" uuid="6e846207-2688-48d0-9029-823f8fb48d8e"/>
+				<imageExpression><![CDATA[net.sf.jasperreports.engine.util.JRImageLoader.getInstance(new SimpleJasperReportsContext()).loadAwtImageFromBytes(javax.xml.bind.DatatypeConverter.parseBase64Binary($F{picture_base64}))]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="227" y="63" width="100" height="30" uuid="94c35115-f7f8-4db8-8c79-d0ad1d38591f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="534932eb-6234-4752-93ac-6a02e34eade6"/>
+				</reportElement>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{last_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="227" y="103" width="100" height="30" uuid="3d4793a3-5e7a-4ed7-86cc-7c0a2718b369">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="76f4dbea-3ec1-4028-af30-bdf08ad80467"/>
+				</reportElement>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{facility_cd}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="103" width="100" height="30" uuid="20a1306c-41f5-41e8-aca4-efb9ee7a643e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="324a1ffc-9188-4850-8cac-40bb29be98fb"/>
+				</reportElement>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{employee_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="436" y="52" width="100" height="30" uuid="c3572493-d044-4cb1-a369-d892a3d06f6a"/>
+				<textFieldExpression><![CDATA["Text Field"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

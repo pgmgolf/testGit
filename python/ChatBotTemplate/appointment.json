@@ -1,0 +1,88 @@
+﻿{
+    "type": "bubble",
+    "direction": "ltr",
+    "size": "giga",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "box",
+          "layout": "baseline",
+          "contents": [
+            {
+              "type": "text",
+              "text": "เลขที่นัด / Appointment ID :",
+              "flex": 2,
+              "size": "sm",
+              "align": "start"
+            },
+            {
+              "type": "text",
+              "text": "/*appointment_id*/",
+              "size": "sm",
+              "align": "start",
+              "wrap": true
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "baseline",
+          "contents": [
+            {
+              "type": "text",
+              "text": "วันที่นัด/Appointment Date :",
+              "flex": 2,
+              "size": "sm",
+              "align": "start"
+            },
+            {
+              "type": "text",
+              "text": "/*appointment_date*/",
+              "size": "sm",
+              "align": "start",
+              "wrap": true
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "baseline",
+          "contents": [
+            {
+              "type": "text",
+              "text": "เวลา / Time :",
+              "flex": 0
+            },
+            {
+              "type": "text",
+              "text": "/*appointment_time*/"
+            }
+          ]
+        }
+      ]
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://www.innotechlab.co.th/Images/barcode.png"
+            },
+            {
+              "type": "image",
+              "url": "https://www.innotechlab.co.th/Images/innotech_logo.png",
+              "gravity": "center",
+              "size": "xs"
+            }
+          ]
+        }
+      ]
+    }
+  }

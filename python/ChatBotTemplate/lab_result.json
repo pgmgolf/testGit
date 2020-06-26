@@ -1,0 +1,64 @@
+﻿{
+    "type": "bubble",
+    "direction": "ltr",
+    "size": "giga",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "ท่านสามารถดูรายงานผลการวิเคราะห์ได้แล้ว",
+          "size": "sm",
+          "align": "start"
+        },
+        {
+          "type": "text",
+          "text": "Now, You can see laboratory report.",
+          "size": "sm",
+          "align": "start"
+        }
+      ]
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "กรุณากดลิ้งค์เพื่อดูรายงานผลการวิเคราะห์",
+          "size": "sm",
+          "align": "start"
+        },
+        {
+          "type": "text",
+          "text": "To can see laboratory report, click the link below.",
+          "size": "sm",
+          "align": "start"
+        },
+        {
+          "type": "text",
+          "text": "Lab Result",
+          "size": "xl",
+          "align": "center",
+          "weight": "bold",
+          "color": "#083EEC",
+          "action": {
+            "type": "uri",
+            "uri": "http://www.innotechlab.co.th/LabResult//*order_id*/.pdf"
+          }
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "horizontal",
+      "contents": [
+        {
+          "type": "image",
+          "url": "https://www.innotechlab.co.th/Images/innotech_logo.png",
+          "size": "sm"
+        }
+      ]
+    }
+  } 

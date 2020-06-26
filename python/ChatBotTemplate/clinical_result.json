@@ -1,0 +1,169 @@
+                    {
+                        "type": "bubble",
+                        "direction": "ltr",
+                        "header": {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "image",
+                              "url": "https://www.innotechlab.co.th/Images/home_objects/logo_03.jpg"
+                            },
+                            {
+                              "type": "text",
+                              "text": "Clinical Result",
+                              "size": "lg",
+                              "align": "start",
+                              "weight": "bold",
+                              "color": "#0404B4"
+                            },
+                            {
+                              "type": "text",
+                              "text": "/*order_id*/",
+                              "size": "3xl",
+                              "weight": "bold",
+                              "color": "#000000"
+                            }
+                          ]
+                        },
+                        "body": {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "separator",
+                              "color": "#C3C3C3"
+                            },
+                            {
+                              "type": "box",
+                              "layout": "baseline",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "Patient Name",
+                                  "size": "xs",
+                                  "align": "start"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "/*patient_name*/",
+                                  "flex": 1,
+                                  "size": "xxs",
+                                  "align": "end"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "box",
+                              "layout": "baseline",
+                              "size": "xs",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "Received Date",
+                                  "size": "xs"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "/*received_date*/",
+                                  "flex": 1,
+                                  "size": "xxs",
+                                  "align": "end"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "box",
+                              "layout": "baseline",
+                              "size": "xs",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "HN",
+                                  "size": "xs"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "/*hn*/",
+                                  "flex": 3,
+                                  "size": "xxs",
+                                  "align": "end"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "box",
+                              "layout": "baseline",
+                              "size": "xs",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "Sex",
+                                  "size": "xs"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "/*sex_desc*/",
+                                  "flex": 3,
+                                  "size": "xxs",
+                                  "align": "end"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "box",
+                              "layout": "baseline",
+                              "size": "xs",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "Test Item",
+                                  "size": "xs"
+                                },
+                                {
+                                  "type": "text",
+                                  "text": "/*test_item_desc_list*/",
+                                  "flex": 3,
+                                  "size": "xxs",
+                                  "wrap": true
+                                }
+                              ]
+                            },
+                            {
+                              "type": "separator",
+                              "margin": "lg",
+                              "color": "#C3C3C3"
+                            }
+                          ]
+                        },
+                        "footer": {
+                          "type": "box",
+                          "layout": "horizontal",
+                          "contents": [
+                          {
+                              "type": "button",
+                              "action": {
+                                "type": "uri",
+                                "label": "Call",
+                                "uri": "tel:023205138"
+                              },
+                              "height": "sm",
+                              "style": "link"
+                            },
+                            {
+                              "type": "button",
+                              "action": {
+                                "type": "uri",
+                                "label": "View Result",
+                                "uri": "https://aphrozone.dyndns.org/Clinical//*order_id*/.pdf"
+                              },
+                              "height": "sm",
+                              "style": "link"
+                            },
+                            {
+                              "type": "spacer",
+                              "size": "sm"
+                            }
+                          ]
+                        }
+                    }

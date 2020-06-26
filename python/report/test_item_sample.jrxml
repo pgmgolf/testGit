@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="test_item_sample" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bf0c0be3-01c5-46f8-9d61-9b267a9b4c23">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="JSON Test Item"/>
+	<queryString language="JSON">
+		<![CDATA[data]]>
+	</queryString>
+	<field name="test_item_id" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="test_item_id"/>
+		<fieldDescription><![CDATA[test_item_id]]></fieldDescription>
+	</field>
+	<field name="test_item_desc" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="test_item_desc"/>
+		<fieldDescription><![CDATA[test_item_desc]]></fieldDescription>
+	</field>
+	<field name="description" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="description"/>
+		<fieldDescription><![CDATA[description]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="140" y="10" width="310" height="50" uuid="91ba67a6-4004-406c-b753-19d6124c458b"/>
+				<textElement textAlignment="Center">
+					<font fontName="THSarabunPSK" size="40" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Test Item Sample]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="6" width="75" height="67" uuid="e343eecb-7fe6-4c12-8fe8-1394afad0bda"/>
+				<imageExpression><![CDATA["../images/logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="163" height="30" uuid="00276204-b92e-465a-8147-19cb203400b7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f84ade10-e8b8-4b58-b26f-4237c2629081"/>
+				</reportElement>
+				<textElement>
+					<font fontName="THSarabunPSK" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[test_item_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="0" width="251" height="30" uuid="a46c814a-27c8-4f21-9542-abc32df31321">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="677550ee-d497-4b29-9cdd-adfb226b2138"/>
+				</reportElement>
+				<textElement>
+					<font fontName="THSarabunPSK" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[test_item_desc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="0" width="161" height="30" uuid="b36d7e89-fde6-4395-92e0-df9d2740baf1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="54bbd3b2-8e27-4bce-92cf-65331c9ed58f"/>
+				</reportElement>
+				<textElement>
+					<font fontName="THSarabunPSK" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[description]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="37" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="163" height="30" uuid="55fe92d8-f4c1-44a4-98cf-3bdf4a3426a8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f84ade10-e8b8-4b58-b26f-4237c2629081"/>
+				</reportElement>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{test_item_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="162" y="0" width="252" height="30" uuid="1829fc5a-7005-4ca6-9445-8651c0d133c2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="677550ee-d497-4b29-9cdd-adfb226b2138"/>
+				</reportElement>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{test_item_desc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="0" width="161" height="30" uuid="77a7e0d1-7ed0-4014-a395-2088457c2490">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="54bbd3b2-8e27-4bce-92cf-65331c9ed58f"/>
+				</reportElement>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,1141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rptCalTax" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ec4a1451-f2d9-4adb-ad63-93bd0a93a929">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="rptCalTax_dataAdapter"/>
+	<queryString language="JSON">
+		<![CDATA[data]]>
+	</queryString>
+	<field name="json_taxYear" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_taxYear"/>
+		<fieldDescription><![CDATA[json_taxYear]]></fieldDescription>
+	</field>
+	<field name="json_typePerson" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_typePerson"/>
+		<fieldDescription><![CDATA[json_typePerson]]></fieldDescription>
+	</field>
+	<field name="json_corporate" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_corporate"/>
+		<fieldDescription><![CDATA[json_corporate]]></fieldDescription>
+	</field>
+	<field name="json_No" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_No"/>
+		<fieldDescription><![CDATA[json_No]]></fieldDescription>
+	</field>
+	<field name="json_typePlan" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_typePlan"/>
+		<fieldDescription><![CDATA[json_typePlan]]></fieldDescription>
+	</field>
+	<field name="json_DeedNumber" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_DeedNumber"/>
+		<fieldDescription><![CDATA[json_DeedNumber]]></fieldDescription>
+	</field>
+	<field name="json_SiteSurvey" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_SiteSurvey"/>
+		<fieldDescription><![CDATA[json_SiteSurvey]]></fieldDescription>
+	</field>
+	<field name="json_ParcelNumber" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_ParcelNumber"/>
+		<fieldDescription><![CDATA[json_ParcelNumber]]></fieldDescription>
+	</field>
+	<field name="json_SheetNumber" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_SheetNumber"/>
+		<fieldDescription><![CDATA[json_SheetNumber]]></fieldDescription>
+	</field>
+	<field name="json_Province" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_Province"/>
+		<fieldDescription><![CDATA[json_Province]]></fieldDescription>
+	</field>
+	<field name="json_SpaceAreaSqw" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_SpaceAreaSqw"/>
+		<fieldDescription><![CDATA[json_SpaceAreaSqw]]></fieldDescription>
+	</field>
+	<field name="json_SpacePlantingAreaSqm" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_SpacePlantingAreaSqm"/>
+		<fieldDescription><![CDATA[json_SpacePlantingAreaSqm]]></fieldDescription>
+	</field>
+	<field name="json_ApartmentAreaSqm" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_ApartmentAreaSqm"/>
+		<fieldDescription><![CDATA[json_ApartmentAreaSqm]]></fieldDescription>
+	</field>
+	<field name="json_CostEstimateSpaceAreaSQ" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_CostEstimateSpaceAreaSQ"/>
+		<fieldDescription><![CDATA[json_CostEstimateSpaceAreaSQ]]></fieldDescription>
+	</field>
+	<field name="json_CostEstimateSpacePlantingAreaSqm" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_CostEstimateSpacePlantingAreaSqm"/>
+		<fieldDescription><![CDATA[json_CostEstimateSpacePlantingAreaSqm]]></fieldDescription>
+	</field>
+	<field name="json_CostEstimateSpaceApartmentAreaSqm" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_CostEstimateSpaceApartmentAreaSqm"/>
+		<fieldDescription><![CDATA[json_CostEstimateSpaceApartmentAreaSqm]]></fieldDescription>
+	</field>
+	<field name="json_Depreciation" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_Depreciation"/>
+		<fieldDescription><![CDATA[json_Depreciation]]></fieldDescription>
+	</field>
+	<field name="json_CostEstimateSpaceArea" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_CostEstimateSpaceArea"/>
+		<fieldDescription><![CDATA[json_CostEstimateSpaceArea]]></fieldDescription>
+	</field>
+	<field name="json_CostEstimateSpacePlantingArea" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_CostEstimateSpacePlantingArea"/>
+		<fieldDescription><![CDATA[json_CostEstimateSpacePlantingArea]]></fieldDescription>
+	</field>
+	<field name="json_CostEstimateSpacePlantingAreaDepreciation" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_CostEstimateSpacePlantingAreaDepreciation"/>
+		<fieldDescription><![CDATA[json_CostEstimateSpacePlantingAreaDepreciation]]></fieldDescription>
+	</field>
+	<field name="json_CostEstimateApartmentArea" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_CostEstimateApartmentArea"/>
+		<fieldDescription><![CDATA[json_CostEstimateApartmentArea]]></fieldDescription>
+	</field>
+	<field name="json_CostEstimateSpaceAreaFarmLand" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_CostEstimateSpaceAreaFarmLand"/>
+		<fieldDescription><![CDATA[json_CostEstimateSpaceAreaFarmLand]]></fieldDescription>
+	</field>
+	<field name="json_CostEstimateSpaceAreaLiving" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_CostEstimateSpaceAreaLiving"/>
+		<fieldDescription><![CDATA[json_CostEstimateSpaceAreaLiving]]></fieldDescription>
+	</field>
+	<field name="json_CostEstimateSpaceAreaOther" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_CostEstimateSpaceAreaOther"/>
+		<fieldDescription><![CDATA[json_CostEstimateSpaceAreaOther]]></fieldDescription>
+	</field>
+	<field name="json_CostEstimateSpaceAreaWasteland" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_CostEstimateSpaceAreaWasteland"/>
+		<fieldDescription><![CDATA[json_CostEstimateSpaceAreaWasteland]]></fieldDescription>
+	</field>
+	<field name="json_CostEstimatePlantingFarmLand" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_CostEstimatePlantingFarmLand"/>
+		<fieldDescription><![CDATA[json_CostEstimatePlantingFarmLand]]></fieldDescription>
+	</field>
+	<field name="json_CostEstimatePlantingLiving" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_CostEstimatePlantingLiving"/>
+		<fieldDescription><![CDATA[json_CostEstimatePlantingLiving]]></fieldDescription>
+	</field>
+	<field name="json_CostEstimatePlantingOther" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_CostEstimatePlantingOther"/>
+		<fieldDescription><![CDATA[json_CostEstimatePlantingOther]]></fieldDescription>
+	</field>
+	<field name="json_CostEstimatePlantingWasteland" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_CostEstimatePlantingWasteland"/>
+		<fieldDescription><![CDATA[json_CostEstimatePlantingWasteland]]></fieldDescription>
+	</field>
+	<field name="json_CostEstimateApartmentLiving" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_CostEstimateApartmentLiving"/>
+		<fieldDescription><![CDATA[json_CostEstimateApartmentLiving]]></fieldDescription>
+	</field>
+	<field name="json_CostEstimateApartmentOther" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_CostEstimateApartmentOther"/>
+		<fieldDescription><![CDATA[json_CostEstimateApartmentOther]]></fieldDescription>
+	</field>
+	<field name="json_AmountTotal" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_AmountTotal"/>
+		<fieldDescription><![CDATA[json_AmountTotal]]></fieldDescription>
+	</field>
+	<field name="json_AmountTax" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_AmountTax"/>
+		<fieldDescription><![CDATA[json_AmountTax]]></fieldDescription>
+	</field>
+	<field name="json_Allowance" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_Allowance"/>
+		<fieldDescription><![CDATA[json_Allowance]]></fieldDescription>
+	</field>
+	<field name="json_AmountTotalNet" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_AmountTotalNet"/>
+		<fieldDescription><![CDATA[json_AmountTotalNet]]></fieldDescription>
+	</field>
+	<field name="json_Owner" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_Owner"/>
+		<fieldDescription><![CDATA[json_Owner]]></fieldDescription>
+	</field>
+	<field name="json_PlantType" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_PlantType"/>
+		<fieldDescription><![CDATA[json_PlantType]]></fieldDescription>
+	</field>
+	<field name="json_TypeUse" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_TypeUse"/>
+		<fieldDescription><![CDATA[json_TypeUse]]></fieldDescription>
+	</field>
+	<field name="json_Owner_year" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_Owner_year"/>
+		<fieldDescription><![CDATA[json_Owner_year]]></fieldDescription>
+	</field>
+	<field name="json_CalTax_TaxRate" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_CalTax_TaxRate"/>
+		<fieldDescription><![CDATA[json_CalTax_TaxRate]]></fieldDescription>
+	</field>
+	<field name="json_ownername1" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_ownername1"/>
+	</field>
+	<field name="json_ownername2" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_ownername2"/>
+	</field>
+	<field name="json_ownername3" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_ownername3"/>
+	</field>
+	<field name="json_owner_percent1" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_owner_percent1"/>
+	</field>
+	<field name="json_owner_percent2" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_owner_percent2"/>
+	</field>
+	<field name="json_owner_percent3" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="json_owner_percent3"/>
+	</field>
+	<variable name="json_AmountTotal" class="java.lang.String" calculation="Sum">
+		<variableExpression><![CDATA[$F{json_AmountTotal}]]></variableExpression>
+	</variable>
+	<variable name="json_Allowance" class="java.lang.String" calculation="Sum">
+		<variableExpression><![CDATA[$F{json_Allowance}]]></variableExpression>
+	</variable>
+	<variable name="json_AmountTotalNet" class="java.lang.String" calculation="Sum">
+		<variableExpression><![CDATA[$F{json_AmountTotalNet}]]></variableExpression>
+	</variable>
+	<variable name="json_AmountTax" class="java.lang.String" calculation="Sum">
+		<variableExpression><![CDATA[$F{json_AmountTax}]]></variableExpression>
+	</variable>
+	<variable name="currentdate" class="java.util.Date">
+		<variableExpression><![CDATA[new java.util.Date()]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="185" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="0" width="595" height="30" uuid="ceb9dcd4-95f3-404a-b80e-82b5d8ef7607"/>
+				<textElement textAlignment="Center">
+					<font fontName="THSarabunPSK" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[แบบรายงานผู้เสียภาษี]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-10" y="33" width="578" height="1" uuid="e9e81621-ea32-44f8-8bdd-5a4ab42a72d6">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<textField>
+				<reportElement x="63" y="40" width="456" height="30" uuid="39c5915f-13b0-429f-b466-ebacc689bb92"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{json_ParcelNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="40" width="60" height="30" uuid="b76dfa2f-bf0c-4f59-b98d-68915bab4802"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA["เลขที่ดิน"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="75" width="60" height="30" uuid="974c627b-79d2-41dd-8c3b-cda8a1f399e9"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA["โฉนดเลขที่"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="145" width="60" height="30" uuid="77545a03-73bd-4560-8f72-41b6ca9f05ee"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA["จังหวัด"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="110" width="60" height="30" uuid="e5236ef7-afd2-4ad2-8575-eb3cdd2737fe"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA["เลขระวาง"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="63" y="75" width="410" height="30" uuid="8748e1b7-a341-4492-bf82-125353f9faaf"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{json_DeedNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="63" y="110" width="410" height="30" uuid="1a013ed2-8bbc-4e5a-99ee-81ecc2dd27f1"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{json_SheetNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="63" y="145" width="410" height="30" uuid="be3f0261-369c-43ad-a46f-38130eede9bf"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="18"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{json_Province}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-10" y="180" width="578" height="1" uuid="9d036ec5-c8e9-44e8-86f4-d82df58b96c2">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+		</band>
+	</title>
+	<detail>
+		<band height="378" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-11" y="4" width="286" height="370" uuid="cd079f39-d386-4a85-b0bc-d60f8845d1bf"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="282" y="4" width="286" height="370" uuid="e95e3d69-2ed1-4525-97c3-3013cb0a0374"/>
+			</rectangle>
+			<textField>
+				<reportElement x="-4" y="14" width="110" height="20" uuid="9b6b2234-c815-4ed1-8b3f-f59fc55d6e7b"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ขนาดที่ดิน"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="40" width="110" height="20" uuid="5835305f-1e07-4024-8d20-e605f24e70f8"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ขนาดสิ่งปลูกสร้าง"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="66" width="110" height="20" uuid="f6a0cab1-dc3e-414f-8e12-a9c9ff9fb322"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ขนาดห้องชุด"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="92" width="110" height="20" uuid="0ef85123-20a5-4750-994b-9fc58fe81b24"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ราคาประเมินที่ดิน"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="118" width="110" height="20" uuid="a4e8e522-edbe-4526-af16-d2d03f9d835a"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ราคาประเมินสิ่งปลูกสร้าง"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="144" width="110" height="20" uuid="06d48760-92d5-4e40-8934-6107d4fc8b9c"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ราคาประเมินห้องชุด"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="170" width="110" height="20" uuid="20e2c537-4ebd-4128-a904-d573adadbea8"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ค่าเสื่อมราคาสิ่งปลูกสร้าง"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="196" width="110" height="20" uuid="53d88b19-a473-4e30-b7e0-97bad32437c7"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["มูลค่าที่ดิน"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="222" width="110" height="20" uuid="6b02d8d2-5d42-40c4-9f9b-ca5e5f48d1ce"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["มูลค่าสิ่งปลูกสร้าง"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="248" width="110" height="20" uuid="a248e2b2-50e5-4ed9-895a-3f381475a2c2"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["มูลค่าสิ่งปลูกสร้าง"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="274" width="110" height="20" uuid="741ffbf7-341e-4ad5-ba07-f636adf5b2a8"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["    (หลังหักค่าเสื่อม)"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="300" width="110" height="20" uuid="64b15bd8-7cbf-4582-9706-3e95156e1af2"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["มูลค่าห้องชุด"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="293" y="14" width="110" height="20" uuid="d60f03b7-f67a-4bf9-98f3-670323f8c0b1"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["การใช้ประโยชน์"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="40" width="110" height="20" uuid="d2ea40d9-f009-419f-bc37-dd49f23827cd"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["มูลค่าที่ดิน"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="66" width="110" height="20" uuid="68257b09-9afd-407e-a439-30f56c8ff2e6"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["- เกษตร"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="92" width="110" height="20" uuid="78be8c9c-1902-4ccb-8a5e-4f4dd4bdd727"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["- ที่อยู่อาศัย"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="118" width="110" height="20" uuid="7205470a-e57d-4ff1-836b-92dd63bfd0c4"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["- อื่นๆ"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="144" width="110" height="20" uuid="e8825ec2-43cc-4bc6-98fd-b94726a0bf3e"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["- รกร้าง"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="170" width="110" height="20" uuid="f23ad4d5-4490-4bb9-8eb8-f5eab8a04ba1"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["มูลค่าสิ่งปลูกสร้าง"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="196" width="110" height="20" uuid="6336aa56-4b9a-4f55-8592-38921e428f4b"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["- เกษตร"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="222" width="110" height="20" uuid="fecb6227-96ec-4119-8b49-e0802592f203"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["- ที่อยู่อาศัย"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="248" width="110" height="20" uuid="dcee6097-9c63-48ae-a0d5-3155dbfce51a"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["- อื่นๆ"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="300" width="110" height="20" uuid="09b8d037-c3f3-4101-9951-2cb7c02d0dc4"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16" isBold="true" isItalic="false" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["มูลค่าห้องชุด"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="324" width="110" height="20" uuid="ebd8e295-65d0-4455-9bf6-bf96dc5010f2"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["- ที่อยู่อาศัย"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="350" width="110" height="20" uuid="8527ffdb-9547-4c89-ba92-9b397f49e623"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["- อื่นๆ"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="244" y="14" width="29" height="20" uuid="8cbd2767-df75-4dd8-82a7-9aadec35cce4"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ตร.ว."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="234" y="40" width="39" height="20" uuid="c015ad72-1ef0-46e8-9ed9-4e8202980aae"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ตร.ม."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="234" y="66" width="39" height="20" uuid="40fd7d79-64e4-4863-a767-054e65083695"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ตร.ม."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="204" y="92" width="69" height="20" uuid="6b5a0f4e-3764-40de-ba2d-f20787ebe6d2"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="15" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท ต่อ ตร.ว."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="244" y="300" width="29" height="20" uuid="10d35e6e-a827-4586-807f-c61956f8f4d8"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="244" y="170" width="29" height="20" uuid="b98a2594-b1b1-49b9-9797-abed21fade7d"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="244" y="196" width="29" height="20" uuid="ba242740-fbfa-4732-8139-27fa0c007402"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="244" y="222" width="29" height="20" uuid="c583fe48-6bff-41b6-960f-fff9781c79d7"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="244" y="274" width="29" height="20" uuid="7bb7d50b-4816-473c-8861-12379a8fb4f1"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="204" y="118" width="69" height="20" uuid="7e8419c9-e0bd-4529-9d9c-53e7bd58ddf8"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="15" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท ต่อ ตร.ม."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="204" y="144" width="69" height="20" uuid="03556bc4-2b0e-42c8-8d7c-7fe156e70080"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="15" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท ต่อ ตร.ม."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="535" y="66" width="29" height="20" uuid="2a278925-678a-4c8d-bc80-4f2cf3efd7d7"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="295" y="274" width="150" height="20" uuid="c06fb7c6-1bdf-44f2-9c55-69186655b504"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["- ไม่ทำประโยชน์ตามควรแก่สภาพ"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="535" y="274" width="29" height="20" uuid="bda6b5fb-e644-4265-8fc8-6be283d95c03"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="535" y="92" width="29" height="20" uuid="1aee95f7-f3aa-447c-ad34-ed8db54e623a"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="535" y="118" width="29" height="20" uuid="72393ee0-0e6a-4758-9ec1-50bd5a9b9320"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="535" y="144" width="29" height="20" uuid="c55b6369-d431-42e3-8508-3f18fd7118ca"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="535" y="196" width="29" height="20" uuid="3473e318-ec87-445a-b0bd-692b82e87fbf"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="535" y="222" width="29" height="20" uuid="4f8cd719-a37a-4175-b24f-56ac8a8fd597"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="535" y="248" width="29" height="20" uuid="0ab8b38c-ece8-43ed-b2fa-e4f56dd0e9cf"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="535" y="324" width="29" height="20" uuid="b97c5481-91fc-4799-9d2d-895d3d512861"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="535" y="350" width="29" height="20" uuid="74695b8e-a838-488c-a5e5-b55a35499d9f"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="false" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="110" y="14" width="100" height="20" uuid="f8992b51-6923-437f-99c6-bfd7afbfc8ff"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_SpaceAreaSqw}.trim().equals("-") ? "-" :
+( $F{json_SpaceAreaSqw}.trim().equals("") ? "-" :
+( $F{json_SpaceAreaSqw}.trim().equals("0") ? "-" : 
+( $F{json_SpaceAreaSqw}.trim().equals("0.00") ? "-" : 
+(Double.parseDouble($F{json_SpaceAreaSqw}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="110" y="40" width="100" height="20" uuid="8f8d6624-90d0-4c51-8c6a-56bb4634a706"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_SpacePlantingAreaSqm}.trim().equals("-") ? "-" :
+( $F{json_SpacePlantingAreaSqm}.trim().equals("") ? "-" :
+( $F{json_SpacePlantingAreaSqm}.trim().equals("0") ? "-" : 
+( $F{json_SpacePlantingAreaSqm}.trim().equals("0.00") ? "-" : 
+(Double.parseDouble($F{json_SpacePlantingAreaSqm}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="110" y="66" width="100" height="20" uuid="c3a0cfa5-4ad8-4069-b740-5f784379c0d6"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_ApartmentAreaSqm}.trim().equals("-") ? "-" :
+( $F{json_ApartmentAreaSqm}.trim().equals("") ? "-" :
+( $F{json_ApartmentAreaSqm}.trim().equals("0") ? "-" : 
+( $F{json_ApartmentAreaSqm}.trim().equals("0.00") ? "-" : 
+(Double.parseDouble($F{json_ApartmentAreaSqm}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="110" y="92" width="100" height="20" uuid="e1e49573-9752-4bf0-b0ed-cbd3b17355ee"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_CostEstimateSpaceAreaSQ}.trim().equals("-") ? "-" :
+( $F{json_CostEstimateSpaceAreaSQ}.trim().equals("") ? "-" :
+( $F{json_CostEstimateSpaceAreaSQ}.trim().equals("0") ? "-" : 
+( $F{json_CostEstimateSpaceAreaSQ}.trim().equals("0.00") ? "-" : (Double.parseDouble($F{json_CostEstimateSpaceAreaSQ}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="110" y="118" width="100" height="20" uuid="173c8cb2-09eb-4c43-b051-0f2908130531"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_CostEstimateSpacePlantingAreaSqm}.trim().equals("-") ? "-" :
+( $F{json_CostEstimateSpacePlantingAreaSqm}.trim().equals("") ? "-" :
+( $F{json_CostEstimateSpacePlantingAreaSqm}.trim().equals("0") ? "-" :
+( $F{json_CostEstimateSpacePlantingAreaSqm}.trim().equals("0.00") ? "-" :
+(Double.parseDouble($F{json_CostEstimateSpacePlantingAreaSqm}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="110" y="144" width="100" height="20" uuid="69f8898f-8272-4303-8034-68e98de50b3e"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_CostEstimateSpaceApartmentAreaSqm}.trim().equals("-") ? "-" :
+( $F{json_CostEstimateSpaceApartmentAreaSqm}.trim().equals("") ? "-" :
+( $F{json_CostEstimateSpaceApartmentAreaSqm}.trim().equals("0") ? "-" : 
+( $F{json_CostEstimateSpaceApartmentAreaSqm}.trim().equals("0.00") ? "-" :	
+(Double.parseDouble($F{json_CostEstimateSpaceApartmentAreaSqm}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="110" y="170" width="100" height="20" uuid="b51c9b72-20f9-4170-93ce-dab62164ed3f"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_Depreciation}.trim().equals("-") ? "-" :
+( $F{json_Depreciation}.trim().equals("") ? "-" :
+( $F{json_Depreciation}.trim().equals("0") ? "-" : 
+( $F{json_Depreciation}.trim().equals("0.00") ? "-" :
+(Double.parseDouble($F{json_Depreciation}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="110" y="196" width="100" height="20" uuid="0c2fd91b-7212-46fa-80df-f5473865983a"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_CostEstimateSpaceArea}.trim().equals("-") ? "-" :
+( $F{json_CostEstimateSpaceArea}.trim().equals("") ? "-" :
+( $F{json_CostEstimateSpaceArea}.trim().equals("0") ? "-" : 
+( $F{json_CostEstimateSpaceArea}.trim().equals("0.00") ? "-" :
+(Double.parseDouble($F{json_CostEstimateSpaceArea}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="110" y="222" width="100" height="20" uuid="cddca653-a20b-45e6-8ec3-fb6258e43e42"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_CostEstimateSpacePlantingArea}.trim().equals("-") ? "-" :
+( $F{json_CostEstimateSpacePlantingArea}.trim().equals("") ? "-" :
+( $F{json_CostEstimateSpacePlantingArea}.trim().equals("0") ? "-" :
+( $F{json_CostEstimateSpacePlantingArea}.trim().equals("0.00") ? "-" :
+(Double.parseDouble($F{json_CostEstimateSpacePlantingArea}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="110" y="274" width="100" height="20" uuid="70eed990-ee27-470e-af95-70b24ffe5dfd"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_CostEstimateSpacePlantingAreaDepreciation}.trim().equals("-") ? "-" :
+( $F{json_CostEstimateSpacePlantingAreaDepreciation}.trim().equals("") ? "-" :
+( $F{json_CostEstimateSpacePlantingAreaDepreciation}.trim().equals("0") ? "-" :
+( $F{json_CostEstimateSpacePlantingAreaDepreciation}.trim().equals("0.00") ? "-" :
+(Double.parseDouble($F{json_CostEstimateSpacePlantingAreaDepreciation}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="110" y="300" width="100" height="20" uuid="568d2e37-67fe-44b6-9d6c-695bd94fb801"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_CostEstimateApartmentArea}.trim().equals("-") ? "-" :
+( $F{json_CostEstimateApartmentArea}.trim().equals("") ? "-" :
+( $F{json_CostEstimateApartmentArea}.trim().equals("0") ? "-" :
+( $F{json_CostEstimateApartmentArea}.trim().equals("0.00") ? "-" :
+(Double.parseDouble($F{json_CostEstimateApartmentArea}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="410" y="66" width="125" height="20" uuid="129e5b7a-1b6e-46bf-9fde-972d1b925a8f"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_CostEstimateSpaceAreaFarmLand}.trim().equals("-") ? "-" :
+( $F{json_CostEstimateSpaceAreaFarmLand}.trim().equals("") ? "-" :
+( $F{json_CostEstimateSpaceAreaFarmLand}.trim().equals("0") ? "-" :
+( $F{json_CostEstimateSpaceAreaFarmLand}.trim().equals("0.00") ? "-" :
+(Double.parseDouble($F{json_CostEstimateSpaceAreaFarmLand}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="410" y="92" width="125" height="20" uuid="3cd3ff07-a1e0-4d95-a5d2-3a22b84e001d"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_CostEstimateSpaceAreaLiving}.trim().equals("-") ? "-" :
+( $F{json_CostEstimateSpaceAreaLiving}.trim().equals("") ? "-" :
+( $F{json_CostEstimateSpaceAreaLiving}.trim().equals("0") ? "-" :
+( $F{json_CostEstimateSpaceAreaLiving}.trim().equals("0.00") ? "-" :
+(Double.parseDouble($F{json_CostEstimateSpaceAreaLiving}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="410" y="118" width="125" height="20" uuid="ec26d136-36ff-48dc-9c61-bdc7bbb762a3"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_CostEstimateSpaceAreaOther}.trim().equals("-") ? "-" :
+( $F{json_CostEstimateSpaceAreaOther}.trim().equals("") ? "-" :
+( $F{json_CostEstimateSpaceAreaOther}.trim().equals("0") ? "-" : 
+( $F{json_CostEstimateSpaceAreaOther}.trim().equals("0.00") ? "-" :
+(Double.parseDouble($F{json_CostEstimateSpaceAreaOther}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="410" y="144" width="125" height="20" uuid="cd9d6904-c5a8-40ca-86ee-f9f30d3f38ff"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_CostEstimateSpaceAreaWasteland}.trim().equals("-") ? "-" :
+( $F{json_CostEstimateSpaceAreaWasteland}.trim().equals("") ? "-" :
+( $F{json_CostEstimateSpaceAreaWasteland}.trim().equals("0") ? "-" :
+( $F{json_CostEstimateSpaceAreaWasteland}.trim().equals("0.00") ? "-" :
+(Double.parseDouble($F{json_CostEstimateSpaceAreaWasteland}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="410" y="196" width="125" height="20" uuid="4e4d0ed8-e672-458e-94f6-b7d4bb22bd23"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_CostEstimatePlantingFarmLand}.trim().equals("-") ? "-" :
+( $F{json_CostEstimatePlantingFarmLand}.trim().equals("") ? "-" :
+( $F{json_CostEstimatePlantingFarmLand}.trim().equals("0") ? "-" : 
+( $F{json_CostEstimatePlantingFarmLand}.trim().equals("0.00") ? "-" :
+(Double.parseDouble($F{json_CostEstimatePlantingFarmLand}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="410" y="222" width="125" height="20" uuid="05b423f7-3a10-43c2-9fb2-725d058ad741"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_CostEstimatePlantingLiving}.trim().equals("-") ? "-" :
+( $F{json_CostEstimatePlantingLiving}.trim().equals("") ? "-" :
+( $F{json_CostEstimatePlantingLiving}.trim().equals("0") ? "-" : 
+( $F{json_CostEstimatePlantingLiving}.trim().equals("0.00") ? "-" :
+(Double.parseDouble($F{json_CostEstimatePlantingLiving}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="410" y="248" width="125" height="20" uuid="d7e8875e-e7d1-4220-bac4-36183e17a0fe"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_CostEstimatePlantingOther}.trim().equals("-") ? "-" :
+( $F{json_CostEstimatePlantingOther}.trim().equals("") ? "-" :
+( $F{json_CostEstimatePlantingOther}.trim().equals("0") ? "-" : 
+( $F{json_CostEstimatePlantingOther}.trim().equals("0.00") ? "-" :
+(Double.parseDouble($F{json_CostEstimatePlantingOther}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="445" y="274" width="90" height="20" uuid="ab73ea75-7c06-4072-821d-bc322c659d81"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_CostEstimatePlantingWasteland}.trim().equals("-") ? "-" :
+( $F{json_CostEstimatePlantingWasteland}.trim().equals("") ? "-" :
+( $F{json_CostEstimatePlantingWasteland}.trim().equals("0") ? "-" :
+( $F{json_CostEstimatePlantingWasteland}.trim().equals("0.00") ? "-" :
+(Double.parseDouble($F{json_CostEstimatePlantingWasteland}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="410" y="324" width="125" height="20" uuid="665c9778-2db9-4692-a6ad-e2d5864a26d5"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_CostEstimateApartmentLiving}.trim().equals("-") ? "-" :
+( $F{json_CostEstimateApartmentLiving}.trim().equals("") ? "-" :
+( $F{json_CostEstimateApartmentLiving}.trim().equals("0") ? "-" :
+( $F{json_CostEstimateApartmentLiving}.trim().equals("0.00") ? "-" :
+(Double.parseDouble($F{json_CostEstimateApartmentLiving}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="410" y="350" width="125" height="20" uuid="31576bc0-ed68-48ce-b327-5b57e75b62eb"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_CostEstimateApartmentOther}.trim().equals("-") ? "-" :
+( $F{json_CostEstimateApartmentOther}.trim().equals("") ? "-" :
+( $F{json_CostEstimateApartmentOther}.trim().equals("0") ? "-" : 
+( $F{json_CostEstimateApartmentOther}.trim().equals("0.00") ? "-" :
+(Double.parseDouble($F{json_CostEstimateApartmentOther}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="102" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-8" y="2" width="572" height="79" uuid="1e196e49-e7fb-4b50-bd79-92922498d596"/>
+			</rectangle>
+			<textField>
+				<reportElement x="380" y="82" width="184" height="18" uuid="bdbba178-adf9-4d77-8ef3-db970e48a695"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("dd").format($V{currentdate}) + " "  +
+( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("01") ? "มกราคม" :
+	( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("02") ? "กุมภาพันธ์" :
+		( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("03") ? "มีนาคม" :
+			( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("04") ? "เมษายน" :
+				( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("05") ? "พฤษภาคม" :
+					( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("06") ? "มิถุนายน" :
+						( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("07") ? "กรกฎาคม" :
+						( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("08") ? "สิงหาคม" :
+( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("08") ? "สิงหาคม" :
+( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("09") ? "กันยายน" :
+( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("1") ? "มกราคม" :
+	( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("2") ? "กุมภาพันธ์" :
+		( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("3") ? "มีนาคม" :
+			( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("4") ? "เมษายน" :
+				( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("5") ? "พฤษภาคม" :
+					( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("6") ? "มิถุนายน" :
+						( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("7") ? "กรกฎาคม" :
+						( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("8") ? "สิงหาคม" :
+( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("9") ? "กันยายน" :
+( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("09") ? "กันยายน" :
+( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("10") ? "ตุลาคม" :
+( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("11") ? "พฤศจิกายน" :
+( new SimpleDateFormat("MM").format($V{currentdate}).trim().equals("12") ? "ธันวาคม" :
+new SimpleDateFormat("MM").format($V{currentdate})
+))))))))))))))))))))))) + " " + new SimpleDateFormat("yyyy").format($V{currentdate})]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="10" width="560" height="34" forecolor="#FC1814" uuid="a82d7031-7e99-4eb9-bfea-1ba3848037fb"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="14"/>
+				</textElement>
+				<text><![CDATA[หมายเหตุ: 1. ผลที่ได้จากการคำนวณโดยระบบให้บริการประชาชนในการคำนวณภาษีที่ดินฯ นี้ไม่สามารถใช้ยืนยันต่อคู่สัญญาได้  และขอสงวนสิทธิ์การรับผิดชอบใดๆ ในผลการคำนวณอันเกิดจากความคลาดเคลื่อนหรือการกรอกข้อมูลไม่ถูกต้อง]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="4" y="43" width="560" height="20" forecolor="#FC1814" uuid="6a021736-ab3d-4a0e-869f-dc352be032bd"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="14"/>
+				</textElement>
+				<text><![CDATA[            2. กรณีแปลงที่ดิน มีพื้นที่คาบเกี่ยวกับหลาย อปท. กรุณาสอบถามข้อมูลเพิ่มเติมจาก อปท. เจ้าของพื้นที่]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="4" y="61" width="560" height="20" forecolor="#FC1814" uuid="5fb28051-cad8-4255-91d1-0205d54e1bf4"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="14"/>
+				</textElement>
+				<text><![CDATA[            3. กรณีที่มีเจ้าของร่วม กรุณากรอกข้อมูลเพื่อคำนวณภาษี ครั้งละ 1 รายการ]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="129" splitType="Stretch">
+			<textField pattern="#,##0.##">
+				<reportElement x="330" y="4" width="120" height="20" uuid="84e7b672-1809-4db9-9147-a693b3a81c88"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_AmountTotal}.trim().equals("-") ? "-" :
+( $F{json_AmountTotal}.trim().equals("") ? "-" :
+( $F{json_AmountTotal}.trim().equals("0") ? "-" : 
+( $F{json_AmountTotal}.trim().equals("0.00") ? "-" :
+(Double.parseDouble($F{json_AmountTotal}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="330" y="25" width="120" height="20" uuid="38dab7f9-ebfd-4177-9696-10c95b12fa66"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_Allowance}.trim().equals("-") ? "-" :
+( $F{json_Allowance}.trim().equals("") ? "-" :
+( $F{json_Allowance}.trim().equals("0") ? "-" : 
+( $F{json_Allowance}.trim().equals("0.00") ? "-" :
+(Double.parseDouble($F{json_Allowance}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="452" y="4" width="39" height="20" uuid="603c4665-1237-4321-927c-4f273ca9af81"/>
+				<textElement textAlignment="Center">
+					<font fontName="THSarabunPSK" size="16" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="452" y="25" width="39" height="20" uuid="b69e1eb6-23aa-472b-b017-6afdef9d7eb0"/>
+				<textElement textAlignment="Center">
+					<font fontName="THSarabunPSK" size="16" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="4" width="320" height="20" uuid="0014f231-1231-4823-b310-b7d6cabafce3"/>
+				<textElement textAlignment="Left">
+					<font fontName="THSarabunPSK" size="16" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ภาษีที่ดินและสิ่งปลูกสร้าง ก่อนการเปรียบเทียบกับภาระภาษีเดิม"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="25" width="320" height="20" uuid="66a3ca93-3fad-44be-bad2-410f5c86c3c9"/>
+				<textElement textAlignment="Left">
+					<font fontName="THSarabunPSK" size="16" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["มูลค่าภาษีที่ได้รับการบรรเทาภาระภาษี"]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="-8" y="46" width="572" height="31" uuid="bb9466bf-6300-4335-865b-3ddfb03bb502"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="53" width="320" height="20" uuid="562b65e6-7085-40f9-bdc5-c9492ee2e8f3"/>
+				<textElement textAlignment="Left">
+					<font fontName="THSarabunPSK" size="17" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ภาษีที่ดินและสิ่งปลูกสร้างที่ต้องชำระ"]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.##">
+				<reportElement x="330" y="53" width="120" height="20" uuid="df29e2ce-ec2c-4bb4-b4f3-735e271b48c2"/>
+				<textElement textAlignment="Right">
+					<font fontName="THSarabunPSK" size="17" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_AmountTax}.trim().equals("-") ? "-" :
+( $F{json_AmountTax}.trim().equals("") ? "-" :
+( $F{json_AmountTax}.trim().equals("0") ? "-" : 
+( $F{json_AmountTax}.trim().equals("0.00") ? "-" :
+(Double.parseDouble($F{json_AmountTax}.trim()))
+))))]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="452" y="53" width="39" height="20" uuid="abdd1465-47d8-4b7e-a7cc-bf5b2a84573d"/>
+				<textElement textAlignment="Center">
+					<font fontName="THSarabunPSK" size="17" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["บาท"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="77" width="90" height="16" uuid="3a6285fa-9038-48d1-b0fe-9aaa41ca568d"/>
+				<textElement textAlignment="Left">
+					<font fontName="THSarabunPSK" size="14" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["เจ้าของร่วมรายที่ 1"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="94" width="90" height="16" uuid="d884f414-f382-4823-9c64-0510338af32e"/>
+				<textElement textAlignment="Left">
+					<font fontName="THSarabunPSK" size="14" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["เจ้าของร่วมรายที่ 2"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="111" width="90" height="18" uuid="d6af8a80-826a-4d8b-9863-4722b7b07054"/>
+				<textElement textAlignment="Left">
+					<font fontName="THSarabunPSK" size="14" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["เจ้าของร่วมรายที่ 3"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="215" y="77" width="106" height="16" uuid="0c8c3751-f900-415c-b512-21f193b3ff46"/>
+				<textElement textAlignment="Left">
+					<font fontName="THSarabunPSK" size="14" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["สัดส่วนความเป็นเจ้าของ"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="215" y="94" width="106" height="16" uuid="808190ac-02cc-4b72-a0fb-e1831face490"/>
+				<textElement textAlignment="Left">
+					<font fontName="THSarabunPSK" size="14" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["สัดส่วนความเป็นเจ้าของ"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="215" y="111" width="106" height="16" uuid="67c07ed7-58e1-46f6-b2e8-8aea9f26529c"/>
+				<textElement textAlignment="Left">
+					<font fontName="THSarabunPSK" size="14" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["สัดส่วนความเป็นเจ้าของ"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="371" y="77" width="106" height="16" uuid="97d93de7-1402-4cdf-99be-312155c5ebe1"/>
+				<textElement textAlignment="Left">
+					<font fontName="THSarabunPSK" size="14" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="371" y="94" width="106" height="16" uuid="faeeebc8-83f2-42cb-94a1-c4c76e1a4beb"/>
+				<textElement textAlignment="Left">
+					<font fontName="THSarabunPSK" size="14" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="371" y="111" width="106" height="16" uuid="d651b0f7-6ff3-4cca-93a9-038f637241e2"/>
+				<textElement textAlignment="Left">
+					<font fontName="THSarabunPSK" size="14" isBold="true" isItalic="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="77" width="120" height="16" uuid="b60bea97-bfa1-4bd6-9816-0e48d0c72ec8"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_ownername1}.trim().equals("-") ? "-" :
+( $F{json_ownername1}.trim().equals("") ? "-" :
+$F{json_ownername1}.trim()
+))]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="94" width="120" height="16" uuid="529af81a-227e-460f-b290-fcb0b70f03f2"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_ownername2}.trim().equals("-") ? "-" :
+( $F{json_ownername2}.trim().equals("") ? "-" :
+$F{json_ownername2}.trim()
+))]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="111" width="120" height="16" uuid="2104580a-2ac9-4c02-8455-00ee02902e97"/>
+				<textElement>
+					<font fontName="THSarabunPSK" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_ownername3}.trim().equals("-") ? "-" :
+( $F{json_ownername3}.trim().equals("") ? "-" :
+$F{json_ownername3}.trim()
+))]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="77" width="50" height="16" uuid="cda9cb54-c6b9-4e06-a669-e60a11634249"/>
+				<textElement textAlignment="Center">
+					<font fontName="THSarabunPSK" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_owner_percent1}.trim().equals("-") ? "-" :
+( $F{json_owner_percent1}.trim().equals("") ? "-" :
+$F{json_owner_percent1}.trim()
+))]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="94" width="50" height="16" uuid="97212f6f-d404-4683-880f-c0ec1ff2148e"/>
+				<textElement textAlignment="Center">
+					<font fontName="THSarabunPSK" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_owner_percent2}.trim().equals("-") ? "-" :
+( $F{json_owner_percent2}.trim().equals("") ? "-" :
+$F{json_owner_percent2}.trim()
+))]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="111" width="50" height="16" uuid="78205d46-e570-4848-ac0a-7104cb743812"/>
+				<textElement textAlignment="Center">
+					<font fontName="THSarabunPSK" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{json_owner_percent3}.trim().equals("-") ? "-" :
+( $F{json_owner_percent3}.trim().equals("") ? "-" :
+$F{json_owner_percent3}.trim()
+))]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

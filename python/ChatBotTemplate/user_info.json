@@ -1,0 +1,34 @@
+{
+            "type": "bubble",
+            "direction": "ltr",
+            "hero": {
+              "type": "image",
+              "url": "/*picture_url*/",
+              "size": "full",
+              "aspectRatio": "1.51:1",
+              "aspectMode": "fit"
+            },
+            "body": {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "/*first_name*/ /*last_name*/",
+                  "size": "lg",
+                  "align": "center",
+                  "weight": "bold"
+                },
+                {
+                  "type": "text",
+                  "text": "Email /*email*/",
+                  "align": "center"
+                },
+                {
+                  "type": "text",
+                  "text": "Tel /*phone*/",
+                  "align": "center"
+                }
+              ]
+            }
+        }

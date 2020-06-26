@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="resource_database" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="eb99b7d0-1bb1-4712-9c7b-32471fd02db4">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MSSQL"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="resource_no" class="java.lang.String"/>
+	<parameter name="uom" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[exec sp_resource_test_proc  @resource_no = $P{resource_no},@uom = $P{uom}]]>
+	</queryString>
+	<field name="qty_allocated_pct" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="qty_allocated_pct"/>
+	</field>
+	<field name="qty_avail_pct" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="qty_avail_pct"/>
+	</field>
+	<field name="product_line" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="product_line"/>
+	</field>
+	<field name="product_class_desc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="product_class_desc"/>
+	</field>
+	<field name="product_line_desc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="product_line_desc"/>
+	</field>
+	<field name="commodity_desc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="commodity_desc"/>
+	</field>
+	<field name="sec_buy_from" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="sec_buy_from"/>
+	</field>
+	<field name="sec_vendor_no" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="sec_vendor_no"/>
+	</field>
+	<field name="sec_remit_to" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="sec_remit_to"/>
+	</field>
+	<field name="sec_vendor_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="sec_vendor_name"/>
+	</field>
+	<field name="buy_from" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="buy_from"/>
+	</field>
+	<field name="vendor" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="vendor"/>
+	</field>
+	<field name="remit_to" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="remit_to"/>
+	</field>
+	<field name="vendor_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="vendor_name"/>
+	</field>
+	<field name="resource_no" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="resource_no"/>
+	</field>
+	<field name="description" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="description"/>
+	</field>
+	<field name="uom" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="uom"/>
+	</field>
+	<field name="resource_type" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="resource_type"/>
+	</field>
+	<field name="create_date" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="create_date"/>
+	</field>
+	<field name="lot_ctl_item" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="lot_ctl_item"/>
+	</field>
+	<field name="serialization_ind" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="serialization_ind"/>
+	</field>
+	<field name="addition_desc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="addition_desc"/>
+	</field>
+	<field name="barcode_no" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="barcode_no"/>
+	</field>
+	<field name="home_location" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="home_location"/>
+	</field>
+	<field name="alias" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="alias"/>
+	</field>
+	<field name="nbr_of_carton" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="nbr_of_carton"/>
+	</field>
+	<field name="RFQ_flag" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="RFQ_flag"/>
+	</field>
+	<field name="bypass_po" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="bypass_po"/>
+	</field>
+	<field name="picture" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="picture"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="resource"/>
+	</field>
+	<field name="user1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="user1"/>
+	</field>
+	<field name="user2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="user2"/>
+	</field>
+	<field name="user3" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="user3"/>
+	</field>
+	<field name="user4" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="user4"/>
+	</field>
+	<field name="COLUMN_34" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="resource_no"/>
+	</field>
+	<field name="qty_on_hand" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="qty_on_hand"/>
+	</field>
+	<field name="qty_allocated" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="qty_allocated"/>
+	</field>
+	<field name="COLUMN_37" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="resource_no"/>
+	</field>
+	<field name="source_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="source_code"/>
+	</field>
+	<field name="source_cntl" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="source_cntl"/>
+	</field>
+	<field name="abc_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="abc_code"/>
+	</field>
+	<field name="restrict_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="restrict_code"/>
+	</field>
+	<field name="product_class" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="product_class"/>
+	</field>
+	<field name="bom_note" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="bom_note"/>
+	</field>
+	<field name="planner" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="planner"/>
+	</field>
+	<field name="mrp_review" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="mrp_review"/>
+	</field>
+	<field name="vendor_skey" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="vendor_skey"/>
+	</field>
+	<field name="order_policy" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="order_policy"/>
+	</field>
+	<field name="order_qty" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="order_qty"/>
+	</field>
+	<field name="order_qty_inc" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="order_qty_inc"/>
+	</field>
+	<field name="order_qty_min" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="order_qty_min"/>
+	</field>
+	<field name="order_qty_brk" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="order_qty_brk"/>
+	</field>
+	<field name="lead_time" class="java.lang.Short">
+		<property name="com.jaspersoft.studio.field.label" value="lead_time"/>
+	</field>
+	<field name="lead_time_unit" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="lead_time_unit"/>
+	</field>
+	<field name="account" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="account"/>
+	</field>
+	<field name="date_changed" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="date_changed"/>
+	</field>
+	<field name="floor_stock" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="floor_stock"/>
+	</field>
+	<field name="annual_forecast" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="annual_forecast"/>
+	</field>
+	<field name="cycle_cost" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="cycle_cost"/>
+	</field>
+	<field name="prime_work_ctr" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="prime_work_ctr"/>
+	</field>
+	<field name="buyer" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="buyer"/>
+	</field>
+	<field name="manf_engr" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="manf_engr"/>
+	</field>
+	<field name="safety_stock" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="safety_stock"/>
+	</field>
+	<field name="mfg_lead_time" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="mfg_lead_time"/>
+	</field>
+	<field name="mfg_lead_unit" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="mfg_lead_unit"/>
+	</field>
+	<field name="phantom_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="phantom_code"/>
+	</field>
+	<field name="shelf_life" class="java.lang.Short">
+		<property name="com.jaspersoft.studio.field.label" value="shelf_life"/>
+	</field>
+	<field name="gtc_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="gtc_code"/>
+	</field>
+	<field name="acct_clerk" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="acct_clerk"/>
+	</field>
+	<field name="cost_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="cost_code"/>
+	</field>
+	<field name="commodity" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="commodity"/>
+	</field>
+	<field name="low_level" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="low_level"/>
+	</field>
+	<field name="shelf_life_type" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="shelf_life_type"/>
+	</field>
+	<field name="admin_lead_time" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="admin_lead_time"/>
+	</field>
+	<field name="admin_lead_time_unit" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="admin_lead_time_unit"/>
+	</field>
+	<field name="insp_lead_time" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="insp_lead_time"/>
+	</field>
+	<field name="insp_lead_time_unit" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="insp_lead_time_unit"/>
+	</field>
+	<field name="use_up_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="use_up_code"/>
+	</field>
+	<field name="std_lot_size" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="std_lot_size"/>
+	</field>
+	<field name="ecn_control_flag" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="ecn_control_flag"/>
+	</field>
+	<field name="attribute_controlled_flag" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="attribute_controlled_flag"/>
+	</field>
+	<field name="serial_method" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="serial_method"/>
+	</field>
+	<field name="serial_format_flag" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="serial_format_flag"/>
+	</field>
+	<field name="lot_method" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="lot_method"/>
+	</field>
+	<field name="lot_format_flag" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="lot_format_flag"/>
+	</field>
+	<field name="taxable_flag" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="taxable_flag"/>
+	</field>
+	<field name="tax_type" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="tax_type"/>
+	</field>
+	<field name="apply_to" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="apply_to"/>
+	</field>
+	<field name="harmonized_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="harmonized_code"/>
+	</field>
+	<field name="cube" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="cube"/>
+	</field>
+	<field name="item_catagory_cd" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="item_catagory_cd"/>
+	</field>
+	<field name="item_catagory" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="item_catagory"/>
+	</field>
+	<field name="min_qty" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="min_qty"/>
+	</field>
+	<field name="max_qty" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="max_qty"/>
+	</field>
+	<field name="COLUMN_94" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="vendor_skey"/>
+	</field>
+	<field name="COLUMN_95" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="buy_from"/>
+	</field>
+	<field name="COLUMN_96" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="vendor"/>
+	</field>
+	<field name="COLUMN_97" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="remit_to"/>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="name"/>
+	</field>
+	<field name="COLUMN_99" class="java.lang.Short">
+		<property name="com.jaspersoft.studio.field.label" value="lead_time"/>
+	</field>
+	<field name="COLUMN_100" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="lead_time_unit"/>
+	</field>
+	<field name="COLUMN_101" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="buyer"/>
+	</field>
+	<field name="carrier" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="carrier"/>
+	</field>
+	<field name="fob_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="fob_code"/>
+	</field>
+	<field name="freight_terms" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="freight_terms"/>
+	</field>
+	<field name="terms_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="terms_code"/>
+	</field>
+	<field name="contract" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="contract"/>
+	</field>
+	<field name="contract_exp" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="contract_exp"/>
+	</field>
+	<field name="interplant" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="interplant"/>
+	</field>
+	<field name="print_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="print_code"/>
+	</field>
+	<field name="supplier_status" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="supplier_status"/>
+	</field>
+	<field name="owner_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="owner_code"/>
+	</field>
+	<field name="small_business" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="small_business"/>
+	</field>
+	<field name="account_number" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="account_number"/>
+	</field>
+	<field name="short_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="short_name"/>
+	</field>
+	<field name="buyer_notes" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="buyer_notes"/>
+	</field>
+	<field name="mode_of_trans" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="mode_of_trans"/>
+	</field>
+	<field name="print_req" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="print_req"/>
+	</field>
+	<field name="supplier_group" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="supplier_group"/>
+	</field>
+	<field name="user_notes1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="user_notes1"/>
+	</field>
+	<field name="user_notes2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="user_notes2"/>
+	</field>
+	<field name="edi_test_mode" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="edi_test_mode"/>
+	</field>
+	<field name="exr_country_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="exr_country_code"/>
+	</field>
+	<field name="curr_cd" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="curr_cd"/>
+	</field>
+	<field name="intermed_currency" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="intermed_currency"/>
+	</field>
+	<field name="fin_remit_to_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="fin_remit_to_code"/>
+	</field>
+	<field name="std_exchng_rate" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="std_exchng_rate"/>
+	</field>
+	<field name="appear_flag" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="appear_flag"/>
+	</field>
+	<field name="alt_name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="alt_name"/>
+	</field>
+	<field name="attn" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="attn"/>
+	</field>
+	<field name="address_skey" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="address_skey"/>
+	</field>
+	<field name="ip_address" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="ip_address"/>
+	</field>
+	<field name="email" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="email"/>
+	</field>
+	<field name="COLUMN_133" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="product_class"/>
+	</field>
+	<field name="COLUMN_134" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="description"/>
+	</field>
+	<field name="product_class_group" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="product_class_group"/>
+	</field>
+	<field name="COLUMN_136" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="create_date"/>
+	</field>
+	<field name="alt_product_line" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="alt_product_line"/>
+	</field>
+	<field name="product_line_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="product_line_code"/>
+	</field>
+	<field name="type" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="type"/>
+	</field>
+	<field name="COLUMN_140" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="description"/>
+	</field>
+	<field name="COLUMN_141" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="create_date"/>
+	</field>
+	<field name="product_line_notes" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="product_line_notes"/>
+	</field>
+	<field name="COLUMN_143" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="serial_method"/>
+	</field>
+	<field name="COLUMN_144" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="serial_format_flag"/>
+	</field>
+	<field name="COLUMN_145" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="lot_method"/>
+	</field>
+	<field name="COLUMN_146" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="lot_format_flag"/>
+	</field>
+	<field name="COLUMN_147" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="commodity"/>
+	</field>
+	<field name="COLUMN_148" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="description"/>
+	</field>
+	<field name="commodity_type" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="commodity_type"/>
+	</field>
+	<field name="COLUMN_150" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="product_class"/>
+	</field>
+	<field name="COLUMN_151" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="create_date"/>
+	</field>
+	<field name="COLUMN_152" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="ecn_control_flag"/>
+	</field>
+	<field name="COLUMN_153" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="attribute_controlled_flag"/>
+	</field>
+	<field name="COLUMN_154" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="serial_method"/>
+	</field>
+	<field name="COLUMN_155" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="serial_format_flag"/>
+	</field>
+	<field name="COLUMN_156" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="lot_method"/>
+	</field>
+	<field name="COLUMN_157" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="lot_format_flag"/>
+	</field>
+	<field name="COLUMN_158" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="harmonized_code"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="85" splitType="Stretch">
+			<staticText>
+				<reportElement x="110" y="10" width="274" height="43" uuid="9530ff6b-0d3d-4a91-8b36-1109b0c333ac"/>
+				<textElement textAlignment="Center">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Resource Proc Database]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="6" width="75" height="67" uuid="29a397fe-c118-4620-b888-47f8d857b147"/>
+				<imageExpression><![CDATA["../images/logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="39" splitType="Stretch">
+			<staticText>
+				<reportElement x="-10" y="0" width="100" height="30" uuid="58fb2bbb-9896-4797-bb68-693591409cfc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="36408e4c-fc9f-49b2-b49a-7486422c2f01"/>
+				</reportElement>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[resource_no]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="94" y="0" width="206" height="30" uuid="7401d3bb-8129-408d-b28f-ad2216662053">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f46c56be-0fd8-4601-8cde-218cf5ec23b8"/>
+				</reportElement>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="0" width="60" height="30" uuid="925e6c6f-7430-42cc-864b-ea390105f6da">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="830f0309-bb4f-46aa-bf54-b8598dcef1c8"/>
+				</reportElement>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[uom]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="0" width="100" height="30" uuid="43e36c2f-fbbb-4988-b909-6605c35faadf">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8f9a5879-73cb-4d00-97ac-2359bbd195b9"/>
+				</reportElement>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[resource_type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="0" width="100" height="30" uuid="25d70833-b00c-47c3-a418-4f165255b965">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="004c71f1-2019-41b3-b0c2-0a7ac5e26674"/>
+				</reportElement>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[home_location]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<textField>
+				<reportElement x="-10" y="0" width="100" height="30" uuid="f640371f-98ff-4639-891a-e66d44a83b9e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="36408e4c-fc9f-49b2-b49a-7486422c2f01"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{resource_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="94" y="0" width="206" height="30" uuid="7db41bcb-dee5-485b-a3d9-be482d3d1390">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f46c56be-0fd8-4601-8cde-218cf5ec23b8"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="60" height="30" uuid="4ea56141-c37f-4710-820b-ee060d72bda9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="830f0309-bb4f-46aa-bf54-b8598dcef1c8"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{uom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="0" width="100" height="30" uuid="56c88cca-2fe7-41f7-b241-a1cab5d2ad50">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8f9a5879-73cb-4d00-97ac-2359bbd195b9"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{resource_type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="0" width="100" height="30" uuid="2b7d41e2-9404-4409-a5b0-27b1704ce0d0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="004c71f1-2019-41b3-b0c2-0a7ac5e26674"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{home_location}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

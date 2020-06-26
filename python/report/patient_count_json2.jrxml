@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="patient_count_json2" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="debabf62-ad27-487c-ab12-89c8cb3fb21d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="JSON Patient"/>
+	<queryString language="json">
+		<![CDATA[data]]>
+	</queryString>
+	<field name="labelColumn" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="labelColumn"/>
+		<fieldDescription><![CDATA[labelColumn]]></fieldDescription>
+	</field>
+	<field name="date_from" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="date_from"/>
+		<fieldDescription><![CDATA[date_from]]></fieldDescription>
+	</field>
+	<field name="date_to" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="date_to"/>
+		<fieldDescription><![CDATA[date_to]]></fieldDescription>
+	</field>
+	<field name="time_from" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="time_from"/>
+		<fieldDescription><![CDATA[time_from]]></fieldDescription>
+	</field>
+	<field name="time_to" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="time_to"/>
+		<fieldDescription><![CDATA[time_to]]></fieldDescription>
+	</field>
+	<field name="create_conditions" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="create_conditions"/>
+		<fieldDescription><![CDATA[create_conditions]]></fieldDescription>
+	</field>
+	<field name="display_statistic" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="display_statistic"/>
+		<fieldDescription><![CDATA[display_statistic]]></fieldDescription>
+	</field>
+	<field name="HeaderColumnValue_date" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="HeaderColumnValue_date"/>
+		<fieldDescription><![CDATA[HeaderColumnValue_date]]></fieldDescription>
+	</field>
+	<field name="patientCount" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="patientCount"/>
+		<fieldDescription><![CDATA[patientCount]]></fieldDescription>
+	</field>
+	<field name="special_conditions" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="special_conditions"/>
+		<fieldDescription><![CDATA[special_conditions]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<summary>
+		<band height="555" splitType="Stretch">
+			<staticText>
+				<reportElement x="300" y="10" width="220" height="50" uuid="436c9967-8cd4-4f96-a7ac-a373f10df362"/>
+				<textElement textAlignment="Center">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Patient Count]]></text>
+			</staticText>
+			<barChart>
+				<chart evaluationTime="Report">
+					<reportElement x="0" y="70" width="800" height="470" uuid="fcb6091e-e341-44b3-b6ac-97c94f525027"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["SERIES 1"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{HeaderColumnValue_date}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{patientCount}]]></valueExpression>
+						<labelExpression><![CDATA[$F{labelColumn}]]></labelExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</valueAxisFormat>
+				</barPlot>
+			</barChart>
+			<image>
+				<reportElement x="100" y="0" width="75" height="67" uuid="63f3b09f-25fc-4c21-a94c-5cd7c5ed8ca9"/>
+				<imageExpression><![CDATA["../images/logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</summary>
+</jasperReport>

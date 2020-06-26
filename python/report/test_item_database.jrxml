@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3136f4a9-2a04-437d-9a9b-61718a917dc4">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MSSQL"/>
+	<parameter name="test_item_desc" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[select * from lis_test_item where test_item_desc like $P{test_item_desc}]]>
+	</queryString>
+	<field name="test_item_skey" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="test_item_skey"/>
+	</field>
+	<field name="test_item_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="test_item_id"/>
+	</field>
+	<field name="test_item_desc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="test_item_desc"/>
+	</field>
+	<field name="alias_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="alias_id"/>
+	</field>
+	<field name="alias_desc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="alias_desc"/>
+	</field>
+	<field name="nickname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="nickname"/>
+	</field>
+	<field name="additional_desc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="additional_desc"/>
+	</field>
+	<field name="eff_start_date" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="eff_start_date"/>
+	</field>
+	<field name="eff_stop_date" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="eff_stop_date"/>
+	</field>
+	<field name="remark" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="remark"/>
+	</field>
+	<field name="date_created" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="date_created"/>
+	</field>
+	<field name="user_created" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="user_created"/>
+	</field>
+	<field name="date_changed" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="date_changed"/>
+	</field>
+	<field name="user_changed" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="user_changed"/>
+	</field>
+	<field name="loinc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="loinc"/>
+	</field>
+	<field name="loinc_desc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="loinc_desc"/>
+	</field>
+	<field name="standard_time" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="standard_time"/>
+	</field>
+	<field name="standard_time_unit" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="standard_time_unit"/>
+	</field>
+	<field name="lead_time" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="lead_time"/>
+	</field>
+	<field name="lead_time_unit" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="lead_time_unit"/>
+	</field>
+	<field name="active" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.label" value="active"/>
+	</field>
+	<field name="sub_category_skey" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="sub_category_skey"/>
+	</field>
+	<field name="tmp" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="tmp"/>
+	</field>
+	<field name="his_cd" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="his_cd"/>
+	</field>
+	<field name="his_desc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="his_desc"/>
+	</field>
+	<field name="method_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="method_code"/>
+	</field>
+	<field name="required_all_result_item" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.label" value="required_all_result_item"/>
+	</field>
+	<field name="sticker_cd" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="sticker_cd"/>
+	</field>
+	<field name="differential_flag" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.label" value="differential_flag"/>
+	</field>
+	<field name="anonymous" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.label" value="anonymous"/>
+	</field>
+	<field name="achieve_pct" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="achieve_pct"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch">
+			<staticText>
+				<reportElement x="130" y="10" width="274" height="43" uuid="d9411bd8-7670-4b93-bfb6-0950ecdbae98"/>
+				<textElement textAlignment="Center">
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Test Item Database]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="6" width="75" height="67" uuid="2770c81b-fb08-4460-9f86-fa9a67033295"/>
+				<imageExpression><![CDATA["../images/logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement x="79" y="0" width="100" height="30" uuid="c6f4991c-0a0a-4a87-ad7b-495ff6bd67ff">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="281ec83a-88c4-49fa-8aba-1afe6fc21d2f"/>
+				</reportElement>
+				<text><![CDATA[test_item_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="277" y="0" width="100" height="30" uuid="798f9824-5a7d-47f5-b590-dff164c9b6ae">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="70825ab5-2dde-4817-a3ff-3a79ee9024e0"/>
+				</reportElement>
+				<text><![CDATA[test_item_desc]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="38" splitType="Stretch">
+			<textField>
+				<reportElement x="79" y="0" width="100" height="30" uuid="aaeae196-534b-4c34-a721-c6d8bec42fb8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="281ec83a-88c4-49fa-8aba-1afe6fc21d2f"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{test_item_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="277" y="0" width="100" height="30" uuid="f1ccd95e-fa32-46e6-9b5f-9185a6fe1555">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="70825ab5-2dde-4817-a3ff-3a79ee9024e0"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{test_item_desc}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
