@@ -24,6 +24,7 @@ LabOrderEntry = Blueprint('LabOrderEntry', __name__)
 @LabOrderEntry.route("/LabOrderEntry/retrieveTestCatOrderEntry", methods=['POST'])
 def retrieveTestCatOrderEntry():
     try:
+        print('1')
         now = datetime.datetime.now()
         isSuccess = True
         reasonCode = 200
